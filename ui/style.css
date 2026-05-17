@@ -1,0 +1,109 @@
+/* clipnotes stylesheet */
+
+window {
+    background-color: #f5f4f0;
+}
+
+.url-area {
+    background-color: #ffffff;
+    border: 1px solid #ddd9d0;
+    border-radius: 6px;
+    padding: 14px 16px;
+}
+
+.url-entry-scroll {
+    border: 2px solid #9a8f7a;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.url-entry-scroll:focus-within {
+    border-color: #c8a96e;
+}
+
+.url-entry-scroll undershoot,
+.url-entry-scroll overshoot {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.url-entry-scroll > viewport {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: none;
+}
+
+.url-entry {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    font-size: 13px;
+    border: none;
+    box-shadow: none;
+}
+
+.video-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2a2218;
+}
+
+.video-meta {
+    font-size: 12px;
+    color: #7a7060;
+}
+
+.summary-view {
+    background-color: #ffffff;
+    border: 1px solid #ddd9d0;
+    border-radius: 6px;
+    font-family: "Liberation Serif", Georgia, serif;
+    font-size: 13px;
+    padding: 8px;
+}
+
+.action-btn {
+    background-color: #c8a96e;
+    color: #1e1c18;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    padding: 6px 18px;
+}
+
+.action-btn:hover {
+    background-color: #d4b87a;
+}
+
+.action-btn:disabled {
+    background-color: #d0ccc4;
+    color: #8a8880;
+}
+
+.secondary-btn {
+    border-radius: 4px;
+    padding: 5px 14px;
+}
+
+.status-bar {
+    background-color: #e8e4dc;
+    border-top: 1px solid #d0ccc4;
+    padding: 4px 12px;
+    font-size: 11px;
+    color: #6a6860;
+}
+
+spinner {
+    color: #c8a96e;
+}
+
+.success-banner {
+    background-color: #2e7d32;
+    padding: 8px 16px;
+}
+
+.success-banner-label {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+}

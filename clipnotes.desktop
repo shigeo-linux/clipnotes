@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Clipnotes
+GenericName=YouTube Summariser
+Comment=AI-powered YouTube video summariser — get key points from any video
+Exec=python3 /opt/clipnotes/clipnotes.py
+Icon=clipnotes
+Terminal=false
+Categories=Network;Utility;
+Keywords=youtube;summary;AI;video;notes;
+StartupNotify=true
