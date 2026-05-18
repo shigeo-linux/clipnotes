@@ -14,7 +14,7 @@ fi
 
 echo "Installing dependencies..."
 sudo apt-get update -qq
-sudo apt-get install -y python3-gi python3-gi-cairo gir1.2-gtk-3.0 python3-requests python3-venv
+sudo apt-get install -y python3-gi python3-gi-cairo gir1.2-gtk-3.0 python3-requests python3-venv librsvg2-bin
 
 echo "Copying application files..."
 sudo mkdir -p "${INSTALL_DIR}"
@@ -27,7 +27,11 @@ sudo "${INSTALL_DIR}/venv/bin/pip" install --quiet youtube-transcript-api pypdf
 
 echo "Installing icon..."
 sudo mkdir -p /usr/share/icons/hicolor/scalable/apps
+sudo mkdir -p /usr/share/icons/hicolor/48x48/apps
+sudo mkdir -p /usr/share/icons/hicolor/256x256/apps
 sudo cp "${INSTALL_DIR}/clipnotes.svg" /usr/share/icons/hicolor/scalable/apps/clipnotes.svg
+rsvg-convert -w 48 -h 48 "${INSTALL_DIR}/clipnotes.svg" | sudo tee /usr/share/icons/hicolor/48x48/apps/clipnotes.png > /dev/null
+rsvg-convert -w 256 -h 256 "${INSTALL_DIR}/clipnotes.svg" | sudo tee /usr/share/icons/hicolor/256x256/apps/clipnotes.png > /dev/null
 sudo gtk-update-icon-cache -f -t /usr/share/icons/hicolor 2>/dev/null || true
 
 echo "Installing desktop entry..."
