@@ -16,7 +16,7 @@ echo "Installing dependencies..."
 sudo apt-get update -qq
 sudo apt-get install -y python3-gi python3-gi-cairo gir1.2-gtk-3.0 python3-requests
 
-pip3 install --user --break-system-packages youtube-transcript-api pypdf 2>/dev/null || true
+sudo pip3 install --break-system-packages youtube-transcript-api pypdf
 
 echo "Copying application files..."
 sudo mkdir -p "${INSTALL_DIR}"
