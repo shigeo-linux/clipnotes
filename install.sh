@@ -39,6 +39,9 @@ exec python3 /opt/clipnotes/clipnotes.py "$@"
 EOF
 sudo chmod +x /usr/local/bin/clipnotes
 
+echo "Creating config directory..."
+mkdir -p "$HOME/.config/${APP_NAME}"
+
 echo ""
 echo "=== Installation complete! ==="
 echo "Run: clipnotes"
