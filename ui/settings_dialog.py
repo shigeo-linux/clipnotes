@@ -4,6 +4,7 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
 MODELS = [
+    'openrouter/auto',
     'anthropic/claude-3.5-sonnet',
     'anthropic/claude-3-opus',
     'openai/gpt-4o',
